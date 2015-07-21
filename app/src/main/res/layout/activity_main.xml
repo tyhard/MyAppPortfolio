@@ -26,42 +26,49 @@
             android:layout_height="wrap_content"
             android:text="Spotifier Streamer"
             android:id="@+id/button_streamer"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayToastMessage"
+            android:nestedScrollingEnabled="true" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Scores App"
             android:id="@+id/button_scores"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayToastMessage" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Library App"
             android:id="@+id/button_library"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayToastMessage" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Build It Bigger"
             android:id="@+id/button_build_bigger"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayToastMessage" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="XYZ Reader"
             android:id="@+id/button_xyz_reader"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayToastMessage" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Capstone: My Own App"
             android:id="@+id/button_capstone"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="displayToastMessage" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -51,9 +52,10 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void displayToastMessage(Button button){
+    public void displayToastMessage(View view){
         String message = "This button will launch ";
-        switch (button.getId()){
+        System.out.println(view.getId());
+        switch (view.getId()){
             case R.id.button_streamer :
                 message += "Spotify Streamer";
                 break;
@@ -75,7 +77,7 @@ public class MainActivity extends ActionBarActivity {
             default:
                 throw new AssertionError("Unsupported button type");
         }
-        Toast.makeText(this.getApplicationContext(), message, Toast.LENGTH_SHORT);
+        Toast.makeText(this.getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
     private Button getButtonById(int id){
